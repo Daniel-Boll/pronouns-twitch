@@ -6,13 +6,21 @@
   "include": [
     ".plasmo/index.d.ts",
     "./**/*.ts",
-    "./**/*.tsx"
+    "./**/*.tsx",
+    "postcss.config.js",
+    "tailwind.config.js"
   ],
   "compilerOptions": {
     "paths": {
       "~*": [
         "./src/*"
-      ]
+      ],
+      "~components*": [
+        "./src/components/*"
+      ],
+      "~lib/utils*": [
+        "./src/lib/utils/*"
+      ],
     },
     "baseUrl": "."
   }
